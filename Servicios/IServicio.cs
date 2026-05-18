@@ -1,10 +1,10 @@
-namespace SistemaPolleria.Repositorios;
+namespace SistemaPolleria.Servicios;
 
-public interface IRepositorio<T>
+public interface IServicio<T>
 {
+    void Crear(T entidad);
     List<T> ObtenerTodos();
     T? ObtenerPorId(int id);
-    void Guardar(T entidad);
     void Actualizar(T entidad);
     void Eliminar(int id);
 }
